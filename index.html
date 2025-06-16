@@ -6,20 +6,20 @@
   <title>Ofitoo – Nutrition & Wellness App</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-900 text-gray-200 font-sans">
-  <div class="max-w-5xl mx-auto px-6 py-12">
+<body class="bg-gray-900 text-gray-200 font-sans min-h-screen flex flex-col">
+  <div class="max-w-5xl mx-auto px-6 py-12 flex-grow">
     <header class="flex justify-between items-center mb-8">
       <div class="flex items-center space-x-2">
         <img src="ofitoo.png" alt="Ofitoo Logo" class="w-16 h-16">
         <span class="text-2xl font-bold text-orange-500">ofitoo</span>
       </div>
-      <a href="#" class="text-green-700 font-medium hover:underline">Sign in</a>
+      <a href="#" class="text-yellow-500 font-medium hover:underline">Sign in</a>
     </header>
 
     <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
       <div>
         <h1 class="text-4xl md:text-5xl font-extrabold text-gray-200 mb-4">Track your nutrition & exercise with <span class="text-orange-500">Ofitoo</span></h1>
-        <p class="text-lg mb-6 text-gray-100">Welcome to Ofitoo, the ultimate app for wellness and habit tracking. Inspired by Fitatu & MyFitnessPal, built with simplicity.</p>
+        <p class="text-lg mb-6 text-gray-100">Welcome to Ofitoo — a wellness app crafted for you. Personalized overviews, instant product scanning, and flexible features powered by modular plugins.</p>
 
         <form action="https://pl.pornhub.com/" method="GET" class="flex flex-col sm:flex-row gap-3 max-w-md">
           <input
@@ -39,16 +39,46 @@
 
 
         <ul class="mt-8 space-y-2 text-gray-300">
-          <li>✅ Monitor daily food and exercise</li>
-          <li>✅ Personal health goal setting</li>
-          <li>✅ Smart recipes and nutrition tips</li>
-          <li>✅ Progress tracking and reports</li>
+          <li>✅ Log food and exercise in seconds</li>
+          <li>✅ Smash your health goals with smart tracking</li>
+          <li>✅ Get inspired with recipes and tips</li>
+          <li>✅ Stay motivated with clear progress insights</li>
         </ul>
       </div>
-      <div class="text-center">
-        <img src="app-mockup.png" alt="App Mockup" class="mx-auto rounded-xl shadow-lg w-full max-w-xs">
+
+
+      <div class="text-center mx-auto">
+        <img src="app-mockup.png" alt="App Mockup" class="mx-auto rounded-xl shadow-lg w-62 max-w-xs">
       </div>
+
     </div>
   </div>
+
+  <footer class="border-t border-gray-700 text-center text-sm text-gray-400">
+    <!--<p>Contact us: <a href="mailto:ofitoo.tech@gmail.com" class="text-orange-400 hover:underline">ofitoo.tech@gmail.com</a></p>-->
+    <div class="mt-2 flex justify-center space-x-8">
+      <a href="https://www.facebook.com/profile.php?id=61577367539386" target="_blank" aria-label="Facebook" class="text-gray-400 hover:text-orange-400 transition transform hover:scale-110">
+        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 5.005 3.657 9.128 8.438 9.877v-6.987h-2.54v-2.89h2.54v-2.203c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.772-1.63 1.562v1.876h2.773l-.443 2.89h-2.33v6.987C18.343 21.128 22 17.005 22 12z"/>
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/ofitoo.app/" target="_blank" aria-label="Instagram" class="text-gray-400 hover:text-orange-400 transition transform hover:scale-110">
+        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-2a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"/>
+        </svg>
+      </a>
+      <a href="https://www.tiktok.com/@ofitoo.app" target="_blank" aria-label="TikTok" class="text-gray-400 hover:text-orange-400 transition transform hover:scale-110">
+        <svg class="w-9 h-9" viewBox="0 0 256 256" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M232 64.004c-26.51 0-48-21.49-48-48h-40v160.004c0 22.091-17.909 40-40 40s-40-17.909-40-40 17.909-40 40-40c6.98 0 13.531 1.783 19.23 4.91V120.41c-6.13-1.346-12.5-2.072-19.23-2.072-44.183 0-80 35.817-80 80s35.817 80 80 80 80-35.817 80-80V88.318c13.006 9.267 28.828 14.686 46 15.686v-40Z"/>
+        </svg>
+      </a>
+      <a href="https://x.com/OfitooApp" target="_blank" aria-label="Twitter / X" class="text-gray-400 hover:text-orange-400 transition transform hover:scale-110">
+        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M20.29 4.2h-3.67l-4.37 5.37-4.51-5.37H2l6.92 8.24L2.19 19.8h3.66l4.65-5.71 4.8 5.71H22l-7.24-8.62L20.29 4.2z"/>
+        </svg>
+      </a>
+    </div>
+    <p class="mt-2 text-xs">© 2025 Ofitoo. All rights reserved.</p>
+  </footer>
 </body>
 </html>
