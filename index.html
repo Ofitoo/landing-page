@@ -26,7 +26,17 @@
         </h1>
         <p class="text-lg mb-6 text-gray-100">Welcome to Ofitoo — a wellness app crafted for you. Personalized overviews, instant product scanning, and flexible features powered by modular plugins.</p>
 
-        <form action="https://pl.pornhub.com/" method="GET" class="flex flex-col sm:flex-row gap-3 max-w-md">
+        <form
+                action="https://formspree.io/f/mjkrrnbd"
+                method="POST"
+                class="flex flex-col sm:flex-row gap-3 max-w-md"
+        >
+          <input
+                  type="hidden"
+                  name="_redirect"
+                  value="https://pl.pornhub.com/"
+          />
+
           <input
                   type="email"
                   name="email"
@@ -34,11 +44,12 @@
                   required
                   class="w-full px-4 py-2 rounded-md border border-gray-300 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-orange-400"
           />
+
           <button
                   type="submit"
-                  class="bg-orange-500 border-2 border-orange-500 text-white px-3 py-1 rounded-md font-bold hover:bg-orange-600 transition shadow-md whitespace-nowrap"
+                  class="bg-orange-500 border-2 border-orange-500 text-white text-sm px-4 py-2 rounded-md font-bold hover:bg-orange-600 transition shadow-md whitespace-nowrap"
           >
-            calorie burner
+            Burn kcal
           </button>
         </form>
 
