@@ -296,7 +296,244 @@
         </svg>
       </a>
     </div>
+    <div class="mt-4">
+      <button onclick="togglePrivacyModal()" class="text-gray-400 hover:text-orange-400 transition hover:underline focus:outline-none">Polityka Prywatności</button>
+    </div>
     <p class="mt-2 text-xs select-none">© 2025 Ofitoo. Wszelkie prawa zastrzeżone.</p>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-modal" class="fixed inset-0 z-50 flex items-center justify-center hidden bg-black bg-opacity-75 p-4 backdrop-blur-sm">
+      <div class="bg-gray-800 rounded-2xl shadow-2xl max-w-3xl w-full max-h-full flex flex-col border border-gray-700 overflow-hidden relative">
+        <div class="flex items-center justify-between p-6 border-b border-gray-700 sticky top-0 bg-gray-800 z-10">
+          <h2 class="text-2xl font-bold text-white">Polityka Prywatności</h2>
+          <button onclick="togglePrivacyModal()" class="text-gray-400 hover:text-white transition">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex-grow p-8 overflow-y-auto text-left space-y-8 custom-scrollbar">
+          <div class="border-l-4 border-orange-500 pl-4 py-2">
+            <h1 class="text-3xl font-extrabold text-white mb-2">Privacy Policy</h1>
+            <p class="text-gray-400 text-sm">Ostatnia aktualizacja: Styczeń 2026</p>
+          </div>
+
+          <section>
+            <h3 class="text-xl font-bold text-orange-400 mb-3">1. Informacje o firmie</h3>
+            <p class="text-gray-300 leading-relaxed">
+              Ofitoo jest obsługiwane przez Maciej Blankenburg - IT<br>
+              NIP: 7272872692<br>
+              Strona internetowa: <a href="https://ofitoo.com" class="text-blue-400 hover:underline">https://ofitoo.com</a><br>
+              Kontakt: <a href="mailto:support@ofitoo.com" class="text-blue-400 hover:underline">support@ofitoo.com</a>
+            </p>
+          </section>
+
+          <section>
+            <h3 class="text-xl font-bold text-orange-400 mb-3">2. Zarządzanie danymi Garmin</h3>
+            <p class="text-gray-300 leading-relaxed mb-4">
+              Aby zarządzać swoimi danymi osobowymi zebranymi przez Garmin, odwiedź oficjalny portal zarządzania danymi Garmin:
+              <a href="https://www.garmin.com/en-GB/account/datamanagement/" class="text-blue-400 hover:underline break-all" target="_blank">https://www.garmin.com/en-GB/account/datamanagement/</a>
+            </p>
+            <p class="text-gray-300 leading-relaxed">
+              Ofitoo nie wykorzystuje danych Garmin do celów osobistych. Wszystkie dane dotyczące kondycji i zdrowia zsynchronizowane z Garmin są używane wyłącznie w celu zapewnienia wglądu, obliczeń i śledzenia w aplikacji Ofitoo.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="text-xl font-bold text-orange-400 mb-3">3. Gromadzone informacje</h3>
+            <p class="text-gray-300 leading-relaxed mb-3">Gromadzimy następujące rodzaje informacji:</p>
+            <ul class="list-disc list-inside text-gray-300 space-y-2">
+              <li><span class="font-semibold text-white">Dane osobowe:</span> imię i nazwisko, adres e-mail, data urodzenia, płeć</li>
+              <li><span class="font-semibold text-white">Dane biometryczne:</span> waga, wzrost, pomiary ciała</li>
+              <li><span class="font-semibold text-white">Dane o zdrowiu i kondycji:</span> spożycie kalorii, aktywność fizyczna, dane treningowe, informacje o wartościach odżywczych</li>
+              <li><span class="font-semibold text-white">Dane urządzenia:</span> dane z monitorów aktywności, w tym tętno, kroki, lokalizacja GPS, prędkość, wysokość i inne metryki z podłączonych urządzeń</li>
+              <li><span class="font-semibold text-white">Dane o użytkowaniu:</span> sposób interakcji z naszą aplikacją i usługami</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3 class="text-xl font-bold text-orange-400 mb-3">4. Integracje z podmiotami zewnętrznymi</h3>
+            <div class="bg-gray-700/50 p-6 rounded-xl border border-gray-600 space-y-4">
+              <h4 class="font-bold text-white text-lg">Integracja z Garmin Connect:</h4>
+              <p class="text-gray-300 leading-relaxed">
+                Gdy połączysz swoje urządzenie Garmin lub konto Garmin Connect z Ofitoo, gromadzimy i przetwarzamy następujące dane:
+              </p>
+              <ul class="list-disc list-inside text-gray-400 space-y-1 ml-4">
+                <li>Dane o aktywności (kroki, dystans, spalone kalorie)</li>
+                <li>Tętno i inne pomiary biometryczne</li>
+                <li>Dane o lokalizacji GPS podczas treningów</li>
+                <li>Dane o śnie i poziomie stresu</li>
+                <li>Podsumowania treningów i szczegóły ćwiczeń</li>
+              </ul>
+              <p class="text-gray-300 leading-relaxed">Dane te są wykorzystywane wyłącznie w celu:</p>
+              <ul class="list-disc list-inside text-gray-400 space-y-1 ml-4">
+                <li>Wyświetlania Twoich statystyk w aplikacji Ofitoo</li>
+                <li>Obliczania dziennego bilansu kalorii</li>
+                <li>Zapewnienia spersonalizowanych rekomendacji fitness</li>
+                <li>Śledzenia postępów w realizacji celów zdrowotnych</li>
+              </ul>
+              <p class="text-gray-300 leading-relaxed italic">
+                Ofitoo wykorzystuje dane Garmin wyłącznie w celu świadczenia podstawowych usług fitness. Dane te nie są wykorzystywane do celów prywatnych.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h3 class="text-xl font-bold text-orange-400 mb-3">5. Jak wykorzystujemy Twoje informacje</h3>
+            <ul class="list-disc list-inside text-gray-300 space-y-2">
+              <li>Świadczenie i utrzymywanie naszych usług śledzenia aktywności</li>
+              <li>Obliczanie spożycia i wydatkowania kalorii</li>
+              <li>Generowanie spersonalizowanych planów treningowych i zaleceń żywieniowych</li>
+              <li>Analizowanie postępów i dostarczanie statystyk</li>
+              <li>Ulepszanie naszych usług i tworzenie nowych funkcji</li>
+              <li>Komunikowanie się z Tobą w sprawie konta i usług</li>
+              <li>Zapewnienie bezpieczeństwa i integralności naszej platformy</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3 class="text-xl font-bold text-orange-400 mb-3">6. Udostępnianie i ujawnianie danych</h3>
+            <p class="text-gray-300 leading-relaxed mb-4">
+              Nie sprzedajemy Twoich danych osobowych. Możemy udostępniać Twoje dane wyłącznie w następujących okolicznościach:
+            </p>
+            <ul class="list-disc list-inside text-gray-300 space-y-2">
+              <li>Za Twoją wyraźną zgodą</li>
+              <li>Dostawcom usług, którzy pomagają w obsłudze naszej platformy (np. hosting w chmurze, analityka)</li>
+              <li>W celu wypełnienia zobowiązań prawnych lub ochrony naszych praw</li>
+              <li>Znajomym, z którymi łączysz się w aplikacji, zgodnie z udzielonymi uprawnieniami</li>
+            </ul>
+            <p class="mt-4 text-gray-400 text-sm italic">
+              Zewnętrzni dostawcy usług są umownie zobowiązani do ochrony Twoich danych i wykorzystywania ich wyłącznie w celach przez nas określonych.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="text-xl font-bold text-orange-400 mb-3">7. Bezpieczeństwo danych</h3>
+            <p class="text-gray-300 mb-3">Wdrażamy standardowe branżowe środki bezpieczeństwa w celu ochrony Twoich danych osobowych:</p>
+            <ul class="list-disc list-inside text-gray-300 space-y-2">
+              <li>Wszystkie transmisje danych są szyfrowane za pomocą protokołów TLS/SSL</li>
+              <li>Bezpieczne uwierzytelnianie przy użyciu tokenów JWT i OAuth2</li>
+              <li>Regularne audyty bezpieczeństwa i aktualizacje</li>
+              <li>Systemy kontroli dostępu i monitorowania</li>
+            </ul>
+            <p class="mt-4 text-gray-400 text-sm italic">Jednak żadna metoda transmisji przez Internet nie jest w 100% bezpieczna i nie możemy zagwarantować całkowitego bezpieczeństwa.</p>
+          </section>
+
+          <section>
+            <h3 class="text-xl font-bold text-orange-400 mb-3">8. Przechowywanie danych</h3>
+            <p class="text-gray-300 leading-relaxed">
+              Przechowujemy Twoje dane osobowe tak długo, jak jest to konieczne do świadczenia naszych usług, wypełniania zobowiązań prawnych i rozstrzygania sporów.
+              Gdy usuniesz swoje konto, usuniemy lub zanonimizujemy Twoje dane osobowe w ciągu 30 dni, z wyjątkiem przypadków, gdy prawo wymaga ich zachowania.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="text-xl font-bold text-orange-400 mb-3">9. Twoje prawa (RODO/GDPR)</h3>
+            <p class="text-gray-300 mb-3">Zgodnie z RODO oraz polskim prawem ochrony danych, przysługują Ci następujące prawa:</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-gray-300">
+              <div class="bg-gray-700/30 p-3 rounded-lg border border-gray-600">• Prawo dostępu do danych</div>
+              <div class="bg-gray-700/30 p-3 rounded-lg border border-gray-600">• Prawo do sprostowania</div>
+              <div class="bg-gray-700/30 p-3 rounded-lg border border-gray-600">• Prawo do usunięcia ("prawo do bycia zapomnianym")</div>
+              <div class="bg-gray-700/30 p-3 rounded-lg border border-gray-600">• Prawo do ograniczenia przetwarzania</div>
+              <div class="bg-gray-700/30 p-3 rounded-lg border border-gray-600">• Prawo do przenoszenia danych</div>
+              <div class="bg-gray-700/30 p-3 rounded-lg border border-gray-600">• Prawo do sprzeciwu</div>
+              <div class="bg-gray-700/30 p-3 rounded-lg border border-gray-600">• Prawo do wycofania zgody</div>
+            </div>
+            <p class="mt-4 text-gray-300">Aby skorzystać z któregokolwiek z tych praw, skontaktuj się z nami pod adresem <a href="mailto:support@ofitoo.com" class="text-blue-400 hover:underline">support@ofitoo.com</a>.</p>
+          </section>
+
+          <section>
+            <h3 class="text-xl font-bold text-orange-400 mb-3">10. Międzynarodowe transfery danych</h3>
+            <p class="text-gray-300 leading-relaxed">
+              Twoje dane mogą być przekazywane i przetwarzane w krajach spoza Europejskiego Obszaru Gospodarczego (EOG). Zapewniamy stosowanie odpowiednich zabezpieczeń, w tym Standardowych Klauzul Umownych zatwierdzonych przez Komisję Europejską.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="text-xl font-bold text-orange-400 mb-3">11. Pliki cookies i technologie śledzenia</h3>
+            <p class="text-gray-300 leading-relaxed">
+              Używamy plików cookies w celu utrzymania sesji, zapamiętywania preferencji i analizowania korzystania z aplikacji. Możesz kontrolować pliki cookies w ustawieniach urządzenia, ale ich wyłączenie może wpłynąć na funkcjonalność aplikacji.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="text-xl font-bold text-orange-400 mb-3">12. Prywatność dzieci</h3>
+            <p class="text-gray-300 leading-relaxed">
+              Nasza usługa nie jest przeznaczona dla osób poniżej 16 roku życia. Nie zbieramy świadomie danych osobowych od dzieci. Jeśli dowiemy się, że zebraliśmy dane od dziecka bez zgody rodziców, niezwłocznie je usuniemy.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="text-xl font-bold text-orange-400 mb-3">13. Zmiany w niniejszej Polityce Prywatności</h3>
+            <p class="text-gray-300 leading-relaxed">
+              Możemy aktualizować tę politykę, aby odzwierciedlić zmiany w naszych praktykach lub wymogach prawnych. O istotnych zmianach powiadomimy Cię, publikując zaktualizowaną politykę w aplikacji lub wysyłając wiadomość e-mail. Dalsze korzystanie z Ofitoo oznacza akceptację zaktualizowanej polityki.
+            </p>
+          </section>
+
+          <section>
+            <h3 class="text-xl font-bold text-orange-400 mb-3">14. Podstawa prawna przetwarzania (RODO)</h3>
+            <ul class="list-disc list-inside text-gray-300 space-y-2">
+              <li><span class="font-semibold text-white">Zgoda:</span> Wyraziłeś wyraźną zgodę</li>
+              <li><span class="font-semibold text-white">Umowa:</span> Przetwarzanie jest niezbędne do realizacji naszej umowy serwisowej</li>
+              <li><span class="font-semibold text-white">Prawnie uzasadnione interesy:</span> W celu ulepszania usług i zapewnienia bezpieczeństwa</li>
+              <li><span class="font-semibold text-white">Obowiązek prawny:</span> W celu zachowania zgodności z przepisami prawa</li>
+            </ul>
+          </section>
+
+          <div class="border-t border-gray-700 pt-8 mt-12">
+            <h3 class="text-2xl font-bold text-white mb-4">Kontakt</h3>
+            <p class="text-gray-300 leading-relaxed">
+              Jeśli masz jakiekolwiek pytania dotyczące niniejszej Polityki Prywatności, skontaktuj się z nami:<br><br>
+              <span class="font-bold">Maciej Blankenburg - IT</span><br>
+              Email: <a href="mailto:support@ofitoo.com" class="text-blue-400 hover:underline">support@ofitoo.com</a><br>
+              Website: <a href="https://ofitoo.com" class="text-blue-400 hover:underline">https://ofitoo.com</a><br>
+              NIP: 7272872692<br><br>
+              W przypadku zapytań związanych z RODO masz również prawo do złożenia skargi do Urzędu Ochrony Danych Osobowych (UODO).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .custom-scrollbar::-webkit-scrollbar { width: 8px; }
+      .custom-scrollbar::-webkit-scrollbar-track { background: #1f2937; }
+      .custom-scrollbar::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 4px; }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #6b7280; }
+      
+      /* Ensure scrollability on mobile and touch devices */
+      .custom-scrollbar {
+        -webkit-overflow-scrolling: touch;
+        overflow-y: auto;
+      }
+
+      /* Fix for mobile viewports where flex centering can push content off-screen */
+      @media (max-width: 640px) {
+        #privacy-modal {
+          align-items: flex-start;
+        }
+      }
+    </style>
+
+    <script>
+      function togglePrivacyModal() {
+        const modal = document.getElementById('privacy-modal');
+        modal.classList.toggle('hidden');
+        if (!modal.classList.contains('hidden')) {
+          document.body.style.overflow = 'hidden';
+        } else {
+          document.body.style.overflow = 'auto';
+        }
+      }
+      
+      // Close modal on click outside
+      window.onclick = function(event) {
+        const modal = document.getElementById('privacy-modal');
+        if (event.target == modal) {
+          togglePrivacyModal();
+        }
+      }
+    </script>
   </footer>
 </body>
 </html>
