@@ -7,66 +7,80 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="favicon.png">
 </head>
-<body class="bg-gray-900 text-gray-200 font-sans min-h-screen flex flex-col">
-  <div class="max-w-5xl mx-auto px-6 py-12 flex-grow">
-    <header class="flex flex-col md:flex-row justify-between items-center mb-8 space-y-4 md:space-y-0">
-      <div class="flex items-center space-x-3 order-1 md:order-2">
-        <a href="index.html" class="text-3xl grayscale hover:grayscale-0 transition" title="English">🇺🇸</a>
-        <span class="text-gray-600">|</span>
-        <span class="text-3xl grayscale-0" title="Polski">🇵🇱</span>
-      </div>
-      <div class="flex items-center space-x-2 order-2 md:order-1">
-        <img src="ofitoo-app-icon.png" alt="Ofitoo App Icon"
-             class="w-20 h-20 select-none"
-             draggable="false">
-        <img src="logo-ofitoo-bw.png" alt="Ofitoo"
-             class="h-10 select-none"
-             draggable="false">
-      </div>
-    </header>
+<body class="bg-gray-950 text-gray-200 font-sans min-h-screen flex flex-col">
 
-    <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
-      <div>
-        <h1
-                class="text-4xl md:text-5xl font-extrabold text-gray-200 mb-4 select-none"
-                style="text-shadow: 4px 4px 6px rgba(215, 215, 0, 0.3);"
+<div class="max-w-6xl mx-auto px-6 py-12 flex-grow">
+
+  <!-- HEADER -->
+  <header class="flex justify-between items-center mb-12">
+    <div class="flex items-center space-x-3">
+      <img src="ofitoo-app-icon.png" class="w-12 h-12">
+      <span class="text-2xl font-bold text-white">Ofitoo</span>
+    </div>
+
+    <div class="flex items-center space-x-4 text-sm text-gray-400">
+      <a href="#" class="hover:text-white">EN</a>
+      <span>|</span>
+      <span class="text-white">PL</span>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+
+    <div>
+      <h1 class="text-5xl font-extrabold leading-tight mb-6">
+        Kontroluj dietę i treningi
+        <span class="text-orange-500">bez tracenia czasu</span>
+      </h1>
+
+      <p class="text-lg text-gray-400 mb-8">
+        Ofitoo to szybka aplikacja do liczenia kalorii i śledzenia postępów.
+        Skanuj produkty, analizuj dane i ogarnij formę bez zbędnych kliknięć.
+      </p>
+
+      <!-- CTA -->
+      <form action="https://formspree.io/f/mjkrrnbd"
+            method="POST"
+            class="flex gap-3 max-w-md">
+
+        <input
+                type="email"
+                name="email"
+                placeholder="Twój e-mail"
+                required
+                class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:ring-2 focus:ring-orange-500 outline-none"
+        />
+
+        <button
+                type="submit"
+                class="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-lg font-semibold transition shadow-lg"
         >
-          Śledź swoje żywienie i ćwiczenia z <span class="text-orange-500">Ofitoo</span>
-        </h1>
-        <p class="text-lg mb-6 text-gray-100">Witaj w Ofitoo — aplikacji do zdrowego stylu życia stworzonej dla Ciebie. Spersonalizowane podsumowania, natychmiastowe skanowanie produktów i elastyczne funkcje dzięki modułowym wtyczkom.</p>
+          Dołącz
+        </button>
+      </form>
 
-        <form
-                action="https://formspree.io/f/mjkrrnbd"
-                method="POST"
-                class="flex flex-col sm:flex-row gap-3 max-w-md"
-        >
+      <p class="text-sm text-gray-500 mt-3">
+        Wczesny dostęp • brak spamu
+      </p>
 
-          <input
-                  type="email"
-                  name="email"
-                  placeholder="Wpisz swój e-mail"
-                  required
-                  class="select-none w-full px-4 py-2 rounded-md border border-gray-300 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-orange-400"
-          />
-
-          <button
-                  type="submit"
-                  class="select-none bg-orange-500 border-2 border-orange-500 text-white text-sm px-4 py-2 rounded-md font-bold hover:bg-orange-600 transition shadow-md whitespace-nowrap"
-          >
-            Spalaj kcal
-          </button>
-        </form>
-
-
-        <ul class="mt-8 space-y-2 text-gray-300">
-          <li>✅ Rejestruj jedzenie i ćwiczenia w kilka sekund</li>
-          <li>✅ Osiągaj cele zdrowotne dzięki inteligentnemu śledzeniu</li>
-          <li>✅ Czerp inspirację z przepisów i porad</li>
-          <li>✅ Utrzymuj motywację dzięki jasnym wglądom w postępy</li>
-        </ul>
-        <br>
-        <p>Kontakt: <a href="mailto:ofitoo.tech@gmail.com" class="text-yellow-500 font-medium hover:underline" draggable="false">ofitoo.tech@gmail.com</a></p>
+      <!-- FEATURES MINI -->
+      <div class="mt-8 space-y-2 text-gray-400 text-sm">
+        <div>⚡ Skanowanie produktów w 1 klik</div>
+        <div>📊 Realne dane o postępach</div>
+        <div>🧠 AI do analizy jedzenia</div>
       </div>
+    </div>
+
+    <!-- MOCKUP -->
+    <div class="relative">
+      <div class="absolute inset-0 bg-orange-500 blur-3xl opacity-20 rounded-full"></div>
+      <img src="overview.jpeg"
+           class="relative rounded-2xl shadow-2xl border border-gray-800">
+    </div>
+
+  </div>
+</div>
 
 
 
