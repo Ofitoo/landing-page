@@ -4,7 +4,9 @@ export default async (request, context) => {
   try {
     const response = await context.next();
     if (!UNAVAILABLE_STATUSES.has(response.status)) {
-      return response;
+      const headers = new Headers(response.headers);
+      headers.set("X-Ofitoo-Activation-Edge", "active");
+      return new Response(response.body, { status: response.status, headers });
     }
   } catch {
     // The proxy can fail before returning an HTTP response.
