@@ -2,10 +2,6 @@ const UNAVAILABLE_STATUSES = new Set([502, 503, 504]);
 
 export default async (request, context) => {
   try {
-    const url = new URL(request.url);
-    if (url.hostname.startsWith("deploy-preview-") && url.searchParams.get("previewError") === "1") {
-      throw new Error("Preview fallback check");
-    }
     const response = await context.next();
     if (!UNAVAILABLE_STATUSES.has(response.status)) {
       const headers = new Headers(response.headers);
