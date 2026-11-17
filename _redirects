@@ -1,2 +1,4 @@
 /activate  https://emil171.cytr.us/api/users/verify  200!
 /reset-password  https://emil171.cytr.us/api/users/password-reset  200!
+/privacy  /index.html  200
+/privacy/  /index.html  200
